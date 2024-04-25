@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  nav {
+    height: 5rem;
+    display: flex;
+    padding: 0 3.125rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  
+  
+  
+  
+  
+  nav ul li+li {
+    margin-left: 2rem;
+  }
+  
+  
+  
+  .heading {
+    font-family: "Playfair Display", serif;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 5rem);
+    align-items: center;
+    padding: 0 3.125rem;
+  }
+  
+  
+  .wrapper {
+    overflow: hidden;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .absolute-wrapper {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 60%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .colored-backgrounds {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    display: flex;
+  }
+  
+  .colored-backgrounds div {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 auto;
+  }
+  
+  
+  
+  
+  
+  
+  .colored-backgrounds div:nth-child(1) {
+    background-color: #d1d0c4;
+  }
+  
+  .colored-backgrounds div:nth-child(2) {
+    background-color: #adc1a8;
+  }
+  
+  .colored-backgrounds div:nth-child(3) {
+    background-color: #d3d8d6;
+  }
+  
+  .colored-backgrounds div:nth-child(4) {
+    background-color: #d3ae99;
+  }
+  
+  .content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+  }
+  
+  .content p {
+    margin-bottom: 1.5rem;
+    font-family: open sans;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .content button {
+    border: none;
+    background-color: #7bcc3c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+  }
+  
+  .content button:active {
+    transform: scale(0.96);
+  
+  }
+  
+  .images {
+  
+    width: 350px;
+    height: 500px;
+    display: flex;
+  
+  }
+  
+  .images .image {
+    height: 100%;
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .image:nth-child(1) {
+    background: url("images/bhupi.jpg") no-repeat 50% 50% / cover;
+  }
+  
+  .image:nth-child(2) {
+    background: url("images/chilli.jpg") no-repeat 50% 50% / cover;
+  }
+  
+  .image:nth-child(3) {
+    background: url("images/motu.jpg") no-repeat 50% 50% / cover;
+  }
+  
+  .image:nth-child(4) {
+    background: url("images/saurav.jpg") no-repeat 50% 50% / cover;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .navigation .right,
+  .navigation .left {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .navigation .right:hover,
+  .navigation .left:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .images,
+  .colored-backgrounds {
+    transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  
